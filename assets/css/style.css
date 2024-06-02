@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+/*
+################
+               THITO'S TEMPLATE 
+################
+*/
+
+:root {
+	--color-background: rgba(247, 249, 250, 1);
+	--color-white: #ffffff;
+
+	--color-primary: #0264c8;
+
+	--color-info: #7d8da1;
+	--color-text: #1b0909;
+	--color-text-muted: #575757;
+	--color-light: #848bc82e;
+	--color-danger: #ff0060;
+
+	--color-green: #1b9c85;
+	--color-dark-green: #04756a;
+	--color-blue: #6c9bcf;
+
+	--card-padding: 1.8rem;
+	--sm-card-padding: 0.3em;
+	--padding-section: 6rem;
+
+	--border-radius: 1.2rem;
+
+	--box-shadow: 0px 4px 10px rgba(3, 18, 26, 0.15);
+	--card-shadow: 0px 2px 5px rgba(3,18,26,0.15)
+	--btn-box-shadow: var(--color-light) 0px 5px 15px;
+
+	--bg-color-img: linear-gradient(
+		160deg,
+		#1a2f78 0%,
+		#1870c9 50%,
+		#5195e3 100%
+	);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Poppins", sans-serif;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	overflow-x: hidden;
+}
+
+@media (min-width: 1280px) {
+	body .container-nav {
+		width: 1280px;
+		padding-inline: 2rem;
+	}
+	body .container-page {
+		width: 1080px;
+	}
+}
+
+header nav {
+	box-shadow: var(--box-shadow);
+}
+
+.info-umum {
+	max-width: 1000px;
+	box-shadow: var(--card-shadow);
+	border-top-right-radius: var(--border-radius);
+	border-top-left-radius: var(--border-radius);
+}
+
+.info-content {
+	border: 1px solid rgba(242, 243, 243, 1);
+	border-radius: 0.6rem;
+	padding: 0.5rem 1rem;
+}
