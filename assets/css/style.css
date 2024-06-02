@@ -11,6 +11,8 @@
 	--color-white: #ffffff;
 
 	--color-primary: #0264c8;
+	--color-cta: rgb(255, 94, 31);
+	--color-cta-hover: rgb(233, 68, 15);
 
 	--color-info: #7d8da1;
 	--color-text: #1b0909;
@@ -29,7 +31,8 @@
 	--border-radius: 1.2rem;
 
 	--box-shadow: 0px 4px 10px rgba(3, 18, 26, 0.15);
-	--card-shadow: 0px 2px 5px rgba(3,18,26,0.15)
+	--card-shadow: 0px 2px 5px rgba(3, 18, 26, 0.15);
+	--kamar-shadow: rgba(3, 18, 26, 0.2) 0px 1px 2px 0px;
 	--btn-box-shadow: var(--color-light) 0px 5px 15px;
 
 	--bg-color-img: linear-gradient(
@@ -38,6 +41,15 @@
 		#1870c9 50%,
 		#5195e3 100%
 	);
+}
+
+.bg-color-img {
+	background: var(--bg-color-img);
+}
+
+.bg-color-img a,
+.bg-color-img a:hover {
+	color: var(--color-white);
 }
 
 * {
@@ -52,15 +64,17 @@ a {
 	color: inherit;
 }
 
+h6,
 p {
 	margin: 0;
 }
 
 small {
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 }
 
 html {
+	scroll-padding-top: 100px;
 	scroll-behavior: smooth;
 }
 
@@ -82,9 +96,35 @@ body {
 	}
 }
 
+.text-cta {
+	color: var(--color-cta);
+}
+
+.bg-cta {
+	background-color: var(--color-cta);
+}
+
+.btn.bg-cta {
+	border-color: var(--color-cta);
+}
+
+.btn.bg-cta:hover {
+	background-color: var(--color-cta-hover);
+}
+
 header nav {
 	box-shadow: var(--box-shadow);
 }
+
+/* ============================ */
+/* |                          | */
+/* |        INFO UMUM         | */
+/* |                          | */
+/* ============================ */
+
+/* ======================== */
+/* ===========> INFO UMUM */
+/* ======================== */
 
 .info-umum {
 	max-width: 1000px;
@@ -93,8 +133,102 @@ header nav {
 	border-top-left-radius: var(--border-radius);
 }
 
+/* ======================== */
+/* ===========> INFO IMG */
+/* ======================== */
+
+.info-img {
+	max-width: 970px;
+	border-top-right-radius: var(--border-radius);
+	border-top-left-radius: var(--border-radius);
+	overflow: hidden;
+}
+
+.img-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0.2rem;
+}
+
+.img-grid > * {
+	width: 100%;
+}
+
+.img-grid img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.img-grid .grid-1 {
+	width: auto;
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+}
+
+/* ======================== */
+/* ===========> INFO CONTENT*/
+/* ======================== */
+
 .info-content {
 	border: 1px solid rgba(242, 243, 243, 1);
 	border-radius: 0.6rem;
 	padding: 0.5rem 1rem;
+}
+
+.info-content h6 {
+	margin-bottom: 1rem;
+}
+
+#carousel-kamar {
+	width: 300px;
+}
+
+/* ============================ */
+/* |                          | */
+/* |          KAMAR           | */
+/* |                          | */
+/* ============================ */
+
+.kamar {
+	background-color: var(--color-white);
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	box-shadow: var(--kamar-shadow);
+	margin-bottom: 1rem;
+}
+
+.kamar th {
+	font-weight: 600;
+}
+
+.kamar thead th {
+	background-color: rgba(242, 243, 243, 1);
+}
+
+.kamar tbody td small {
+	font-size: 0.7rem;
+}
+
+.kamar .table {
+	border-radius: var(--border-radius);
+}
+
+.kebijakan-header {
+	background-image: linear-gradient(
+		92deg,
+		rgba(81, 149, 227, 0.5) -60%,
+		#d6f1ff 40%,
+		rgba(214, 241, 255, 0.7) 100%
+	);
+
+	border-top-left-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+}
+
+.kebijakan-body {
+	border-top-right-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
 }

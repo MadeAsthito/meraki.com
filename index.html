@@ -33,55 +33,63 @@
 		<!-- MAIN STYLE -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
-	<body class="d-flex flex-column justify-content-center">
-		<header>
-			<nav class="navbar navbar-expand-sm bg-white">
-				<div
-					class="container-fluid container-nav gap-2 justify-content-between"
-				>
-					<a class="navbar-brand" href="#">Meraki</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul
-							class="navbar-nav me-auto mb-2 mb-sm-0 px-2 flex-grow-1 justify-content-end"
-						>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>Info Umum</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Kamar</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Lokasi</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Fasilitas</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Kebijakan</a>
-							</li>
-						</ul>
-					</div>
+	<body class="d-flex flex-column justify-content-center" id="home">
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-sm bg-color-img">
+				<div class="container-fluid container-nav justify-content-center">
+					<a class="navbar-brand m-0" href="#">MERAKI</a>
 				</div>
+			</nav>
+			<nav class="navbar navbar-expand bg-white">
+				<ul
+					class="navbar-nav d-flex flex-wrap me-auto mb-0 px-2 flex-grow-1 justify-content-center"
+				>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home"
+							>Info Umum</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#kamar">Kamar</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="#lokasi">Lokasi</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#fasilitas">Fasilitas</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link" href="#kebijakan">Kebijakan</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 		<main>
-			<div class="container-fluid container-page d-flex flex-column my-5">
-				<div class="info-umum bg-white p-4 mb-3" id="infoUmum">
+			<div
+				class="container-fluid container-page d-flex flex-column align-items-center my-5"
+			>
+				<div class="info-img">
+					<div class="img-grid">
+						<div class="grid-1">
+							<img src="./assets/img/hotel-1.jpg" alt="" />
+						</div>
+						<div class="grid-2">
+							<img src="./assets/img/hotel-2.jpg" alt="" />
+						</div>
+						<div class="grid-3">
+							<img src="./assets/img/hotel-3.jpg" alt="" />
+						</div>
+						<div class="grid-4">
+							<img src="./assets/img/hotel-4.jpg" alt="" />
+						</div>
+						<div class="grid-5">
+							<img src="./assets/img/hotel-5.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="info-umum bg-white p-4 mb-3 w-100" id="infoUmum">
 					<div
-						class="info-header d-sm-flex justify-content-between align-items-center"
+						class="info-header d-sm-flex justify-content-between align-items-center mb-2"
 					>
 						<h4>Meraki</h4>
 						<div class="d-sm-flex gap-2">
@@ -89,14 +97,14 @@
 								<small class="text-secondary m-0"
 									>Harga/kamar/malam mulai dari</small
 								>
-								<p class="h5 m-0"><b>Rp 830.579</b></p>
+								<p class="h5 m-0 text-cta">Rp 830.579</p>
 							</div>
-							<button class="btn btn-primary">
+							<button class="btn btn-primary bg-cta">
 								<a href="#">Pilih Kamar</a>
 							</button>
 						</div>
 					</div>
-					<div class="info-deskripsi mt-2">
+					<div class="info-deskripsi">
 						<div class="container">
 							<div class="row">
 								<div class="info-content col-sm-6 mb-3 me-3">
@@ -104,7 +112,9 @@
 									<div class="container">
 										<div class="row mb-2">
 											<div class="col-1 text-center">
-												<span class="material-icons-sharp"> room </span>
+												<span class="material-icons-sharp text-primary">
+													room
+												</span>
 											</div>
 											<div class="col">
 												<p>
@@ -153,13 +163,15 @@
 									<div class="container">
 										<div class="row">
 											<div class="col-1">
-												<span class="material-icons-sharp"> ac_unit </span>
+												<span class="material-icons-sharp text-primary">
+													ac_unit
+												</span>
 											</div>
 											<div class="col">
 												<p>AC</p>
 											</div>
 											<div class="col-1">
-												<span class="material-icons-sharp">
+												<span class="material-icons-sharp text-primary">
 													local_parking
 												</span>
 											</div>
@@ -169,13 +181,15 @@
 										</div>
 										<div class="row">
 											<div class="col-1">
-												<span class="material-icons-sharp"> local_dining </span>
+												<span class="material-icons-sharp text-primary">
+													local_dining
+												</span>
 											</div>
 											<div class="col">
 												<p>Restoran</p>
 											</div>
 											<div class="col-1">
-												<span class="material-icons-sharp">
+												<span class="material-icons-sharp text-primary">
 													import_export
 												</span>
 											</div>
@@ -185,13 +199,17 @@
 										</div>
 										<div class="row">
 											<div class="col-1">
-												<span class="material-icons-sharp"> waves </span>
+												<span class="material-icons-sharp text-primary">
+													waves
+												</span>
 											</div>
 											<div class="col">
 												<p>Kolam Renang</p>
 											</div>
 											<div class="col-1">
-												<span class="material-icons-sharp"> wifi </span>
+												<span class="material-icons-sharp text-primary">
+													wifi
+												</span>
 											</div>
 											<div class="col">
 												<p>Wifi</p>
@@ -199,7 +217,7 @@
 										</div>
 										<div class="row">
 											<div class="col-1">
-												<span class="material-icons-sharp">
+												<span class="material-icons-sharp text-primary">
 													support_agent
 												</span>
 											</div>
@@ -228,9 +246,658 @@
 						</div>
 					</div>
 				</div>
-				<div class="tipe-kamar">
+				<div class="tipe-kamar p-4 mb-3 w-100" id="kamar">
 					<h5>Tipe Kamar yang Tersedia di Meraki</h5>
-					<div class="kamar"></div>
+					<!-- KAMAR DYNAMIS -->
+					<div class="kamar">
+						<div class="kamar-header">
+							<h6 class="text-center text-md-start">Merdeka Twin</h6>
+						</div>
+						<div class="kamar-detail d-md-flex gap-3">
+							<div
+								class="kamar-info d-flex d-md-block justify-content-center align-items-end align-items-md-start mb-2 mb-md-0"
+							>
+								<div id="carousel-kamar" class="carousel slide mb-2">
+									<div class="carousel-indicators">
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="0"
+											class="active"
+											aria-current="true"
+											aria-label="Slide 1"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="1"
+											aria-label="Slide 2"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="2"
+											aria-label="Slide 3"
+										></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img
+												src="./assets/img/kamar-1.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-2.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-3.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+									</div>
+									<button
+										class="carousel-control-prev"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button
+										class="carousel-control-next"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+								<div class="luas-kamar d-flex gap-1 align-items-center">
+									<span class="material-icons-sharp text-primary">
+										straighten
+									</span>
+									<p>28.0 m²</p>
+								</div>
+							</div>
+							<div class="table-responsive w-100">
+								<table class="table rounded-pill">
+									<thead>
+										<tr class="table-light">
+											<th scope="col" class="col-5">Pilihan Kamar</th>
+											<th scope="col" class="col-2">Tamu</th>
+											<th scope="col" class="col-3 text-end">
+												Harga/kamar/malam
+											</th>
+											<th scope="col" class="col-2"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="row">
+												<div class="tb-kamar">
+													<div class="tb-nama-kamar my-1">
+														<small class="text-secondary"
+															>Merdeka Twin Room</small
+														>
+													</div>
+													<p><b>Termasuk sarapan</b></p>
+													<small class="text-secondary"
+														>Tidak Bisa Refund</small
+													>
+													<div
+														class="d-flex gap-1 align-items-center text-secondary"
+													>
+														<span class="material-icons-sharp"> bed </span>
+														<small>1 Ranjang Twin</small>
+													</div>
+												</div>
+											</td>
+											<td class="text-center text-secondary">
+												<div class="max-tamu d-flex">
+													<span class="material-icons-sharp"> person </span
+													><span class="material-icons-sharp"> person </span>
+												</div>
+											</td>
+											<td class="text-end">
+												<p class="text-cta"><b>Rp 1.294.765</b></p>
+												<small class="text-secondary"
+													>Di luar pajak & biaya</small
+												>
+											</td>
+											<td>
+												<a href="" class="btn btn-primary bg-cta px-4 py-1"
+													>Pilih</a
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="kamar">
+						<div class="kamar-header">
+							<h6 class="text-center text-md-start">Merdeka Twin</h6>
+						</div>
+						<div class="kamar-detail d-md-flex gap-3">
+							<div
+								class="kamar-info d-flex d-md-block justify-content-center align-items-end align-items-md-start mb-2 mb-md-0"
+							>
+								<div id="carousel-kamar" class="carousel slide mb-2">
+									<div class="carousel-indicators">
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="0"
+											class="active"
+											aria-current="true"
+											aria-label="Slide 1"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="1"
+											aria-label="Slide 2"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="2"
+											aria-label="Slide 3"
+										></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img
+												src="./assets/img/kamar-1.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-2.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-3.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+									</div>
+									<button
+										class="carousel-control-prev"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button
+										class="carousel-control-next"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+								<div class="luas-kamar d-flex gap-1 align-items-center">
+									<span class="material-icons-sharp text-primary">
+										straighten
+									</span>
+									<p>28.0 m²</p>
+								</div>
+							</div>
+							<div class="table-responsive w-100">
+								<table class="table rounded-pill">
+									<thead>
+										<tr class="table-light">
+											<th scope="col" class="col-5">Pilihan Kamar</th>
+											<th scope="col" class="col-2">Tamu</th>
+											<th scope="col" class="col-3 text-end">
+												Harga/kamar/malam
+											</th>
+											<th scope="col" class="col-2"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="row">
+												<div class="tb-kamar">
+													<div class="tb-nama-kamar my-1">
+														<small class="text-secondary"
+															>Merdeka Twin Room</small
+														>
+													</div>
+													<p><b>Termasuk sarapan</b></p>
+													<small class="text-secondary"
+														>Tidak Bisa Refund</small
+													>
+													<div
+														class="d-flex gap-1 align-items-center text-secondary"
+													>
+														<span class="material-icons-sharp"> bed </span>
+														<small>1 Ranjang Twin</small>
+													</div>
+												</div>
+											</td>
+											<td class="text-center text-secondary">
+												<div class="max-tamu d-flex">
+													<span class="material-icons-sharp"> person </span
+													><span class="material-icons-sharp"> person </span>
+												</div>
+											</td>
+											<td class="text-end">
+												<p class="text-cta"><b>Rp 1.294.765</b></p>
+												<small class="text-secondary"
+													>Di luar pajak & biaya</small
+												>
+											</td>
+											<td>
+												<a href="" class="btn btn-primary bg-cta px-4 py-1"
+													>Pilih</a
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="kamar">
+						<div class="kamar-header">
+							<h6 class="text-center text-md-start">Merdeka Twin</h6>
+						</div>
+						<div class="kamar-detail d-md-flex gap-3">
+							<div
+								class="kamar-info d-flex d-md-block justify-content-center align-items-end align-items-md-start mb-2 mb-md-0"
+							>
+								<div id="carousel-kamar" class="carousel slide mb-2">
+									<div class="carousel-indicators">
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="0"
+											class="active"
+											aria-current="true"
+											aria-label="Slide 1"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="1"
+											aria-label="Slide 2"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="2"
+											aria-label="Slide 3"
+										></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img
+												src="./assets/img/kamar-1.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-2.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-3.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+									</div>
+									<button
+										class="carousel-control-prev"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button
+										class="carousel-control-next"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+								<div class="luas-kamar d-flex gap-1 align-items-center">
+									<span class="material-icons-sharp text-primary">
+										straighten
+									</span>
+									<p>28.0 m²</p>
+								</div>
+							</div>
+							<div class="table-responsive w-100">
+								<table class="table rounded-pill">
+									<thead>
+										<tr class="table-light">
+											<th scope="col" class="col-5">Pilihan Kamar</th>
+											<th scope="col" class="col-2">Tamu</th>
+											<th scope="col" class="col-3 text-end">
+												Harga/kamar/malam
+											</th>
+											<th scope="col" class="col-2"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="row">
+												<div class="tb-kamar">
+													<div class="tb-nama-kamar my-1">
+														<small class="text-secondary"
+															>Merdeka Twin Room</small
+														>
+													</div>
+													<p><b>Termasuk sarapan</b></p>
+													<small class="text-secondary"
+														>Tidak Bisa Refund</small
+													>
+													<div
+														class="d-flex gap-1 align-items-center text-secondary"
+													>
+														<span class="material-icons-sharp"> bed </span>
+														<small>1 Ranjang Twin</small>
+													</div>
+												</div>
+											</td>
+											<td class="text-center text-secondary">
+												<div class="max-tamu d-flex">
+													<span class="material-icons-sharp"> person </span
+													><span class="material-icons-sharp"> person </span>
+												</div>
+											</td>
+											<td class="text-end">
+												<p class="text-cta"><b>Rp 1.294.765</b></p>
+												<small class="text-secondary"
+													>Di luar pajak & biaya</small
+												>
+											</td>
+											<td>
+												<a href="" class="btn btn-primary bg-cta px-4 py-1"
+													>Pilih</a
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="kamar">
+						<div class="kamar-header">
+							<h6 class="text-center text-md-start">Merdeka Twin</h6>
+						</div>
+						<div class="kamar-detail d-md-flex gap-3">
+							<div
+								class="kamar-info d-flex d-md-block justify-content-center align-items-end align-items-md-start mb-2 mb-md-0"
+							>
+								<div id="carousel-kamar" class="carousel slide mb-2">
+									<div class="carousel-indicators">
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="0"
+											class="active"
+											aria-current="true"
+											aria-label="Slide 1"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="1"
+											aria-label="Slide 2"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#carousel-kamar"
+											data-bs-slide-to="2"
+											aria-label="Slide 3"
+										></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img
+												src="./assets/img/kamar-1.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-2.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+										<div class="carousel-item">
+											<img
+												src="./assets/img/kamar-3.png"
+												class="img-fluid rounded-3"
+												alt="..."
+											/>
+										</div>
+									</div>
+									<button
+										class="carousel-control-prev"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button
+										class="carousel-control-next"
+										type="button"
+										data-bs-target="#carousel-kamar"
+										data-bs-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+								<div class="luas-kamar d-flex gap-1 align-items-center">
+									<span class="material-icons-sharp text-primary">
+										straighten
+									</span>
+									<p>28.0 m²</p>
+								</div>
+							</div>
+							<div class="table-responsive w-100">
+								<table class="table rounded-pill">
+									<thead>
+										<tr class="table-light">
+											<th scope="col" class="col-5">Pilihan Kamar</th>
+											<th scope="col" class="col-2">Tamu</th>
+											<th scope="col" class="col-3 text-end">
+												Harga/kamar/malam
+											</th>
+											<th scope="col" class="col-2"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="row">
+												<div class="tb-kamar">
+													<div class="tb-nama-kamar my-1">
+														<small class="text-secondary"
+															>Merdeka Twin Room</small
+														>
+													</div>
+													<p><b>Termasuk sarapan</b></p>
+													<small class="text-secondary"
+														>Tidak Bisa Refund</small
+													>
+													<div
+														class="d-flex gap-1 align-items-center text-secondary"
+													>
+														<span class="material-icons-sharp"> bed </span>
+														<small>1 Ranjang Twin</small>
+													</div>
+												</div>
+											</td>
+											<td class="text-center text-secondary">
+												<div class="max-tamu d-flex">
+													<span class="material-icons-sharp"> person </span
+													><span class="material-icons-sharp"> person </span>
+												</div>
+											</td>
+											<td class="text-end">
+												<p class="text-cta"><b>Rp 1.294.765</b></p>
+												<small class="text-secondary"
+													>Di luar pajak & biaya</small
+												>
+											</td>
+											<td>
+												<a href="" class="btn btn-primary bg-cta px-4 py-1"
+													>Pilih</a
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END OF KAMAR DYNAMIS -->
+				</div>
+
+				<div class="kebijakan px-4 mb-3 w-100" id="kebijakan">
+					<div class="kebijakan-card d-flex flex-column flex-md-row">
+						<div class="kebijakan-header p-3 flex-grow-1">
+							<h5 class="m-0">
+								Kebijakan Akomodasi & Informasi Umum di Meraki
+							</h5>
+						</div>
+						<div class="kebijakan-body bg-white p-3 flex-shrink-1">
+							<div class="kebijakan-group d-flex gap-2">
+								<div class="icon">
+									<span class="material-icons-sharp text-primary">
+										schedule
+									</span>
+								</div>
+								<div class="kebijakan-content">
+									<h6>Waktu Check-in/Check-out</h6>
+									<div class="d-flex gap-3">
+										<p>Check-in: <b>Dari 15:00</b></p>
+										<p>Check-out: <b>Sebelum 12:00</b></p>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="kebijakan-group d-flex gap-2">
+								<div class="icon">
+									<span class="material-icons-sharp text-primary">
+										description
+									</span>
+								</div>
+								<div class="kebijakan-content">
+									<h6>Petunjuk Umum Check-in</h6>
+									<p class="mb-3">
+										You may be required to present valid government-issued
+										identification at check-in, along with credit card or cash
+										to cover deposits and incidentals. Special request may
+										depend on hotel's availability at check-in and may cost
+										extra fee. Special request availability is not guaranteed.
+										Hotel may charge you additional fee for each extra person
+										after reserved room's maximum capacity. Pool closed on 14 &
+										15 November 2020 due to wedding at 6 am until 12 pm.
+									</p>
+									<p>
+										Karena adanya lonjakan angka penularan Covid-19, maka sesuai
+										dengan perwal pemerintah kami informasikan akan ada
+										penutupan sementara fasilitas swimming pool kami terhitung
+										hari ini 09 July 2021 - 20 July 2021
+									</p>
+								</div>
+							</div>
+							<hr />
+							<div class="kebijakan-group d-flex gap-2">
+								<div class="icon">
+									<span class="material-icons-sharp text-primary">
+										receipt_long
+									</span>
+								</div>
+								<div class="kebijakan-content">
+									<h6>Kebijakan Tambahan</h6>
+									<p class="mb-3">
+										You may be required to present valid government-issued
+										identification at check-in, along with credit card or cash
+										to cover deposits and incidentals. Special request may
+										depend on hotel's availability at check-in and may cost
+										extra fee. Special request availability is not guaranteed.
+										Hotel may charge you additional fee for each extra person
+										after reserved room's maximum capacity.
+									</p>
+									<p>
+										Karena adanya lonjakan angka penularan Covid-19, maka sesuai
+										dengan perwal pemerintah kami informasikan akan ada
+										penutupan sementara fasilitas swimming pool kami terhitung
+										hari ini 09 July 2021 - 20 July 2021 Include Takjil during
+										Ramadhan Periode
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
