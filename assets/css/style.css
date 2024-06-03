@@ -318,8 +318,6 @@ header nav .nav-link.active::before {
 }
 
 /* INFO SECTION */
-.info-section {
-}
 .info-section h1 {
 	margin: 0;
 	font-size: 2.5rem;
@@ -336,7 +334,8 @@ header nav .nav-link.active::before {
 
 .kamar-section,
 .kamar-section .carousel-item {
-	height: min(450px, 35dvh);
+	/* TODO : SEARCH FOR BETTER SOLUTION */
+	height: min(400px, 40dvh); 
 	background-position: center;
 	background-size: cover;
 }
