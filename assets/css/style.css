@@ -51,6 +51,7 @@
 	font-weight: 100;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-SemiBold.eot");
@@ -146,12 +147,10 @@
 	--kamar-shadow: rgba(3, 18, 26, 0.2) 0px 1px 2px 0px;
 	--btn-box-shadow: var(--color-light) 0px 5px 15px;
 
-	--bg-color-img: linear-gradient(
-		160deg,
-		#1a2f78 0%,
-		#1870c9 50%,
-		#5195e3 100%
-	);
+	--bg-color-img: linear-gradient(160deg,
+			#1a2f78 0%,
+			#1870c9 50%,
+			#5195e3 100%);
 }
 
 * {
@@ -204,6 +203,7 @@ h1 {
 		width: 1280px;
 		padding-inline: 2rem;
 	}
+
 	body .container-page {
 		width: 1080px;
 	}
@@ -279,7 +279,7 @@ header nav .nav-link.active::before {
 /* HERO SECTION */
 
 .hero-section .carousel-item {
-	height: 90dvh;
+	height: 650px;
 	background-size: cover;
 }
 
@@ -331,19 +331,11 @@ header nav .nav-link.active::before {
 }
 
 /* KAMAR SECTION */
-
-.kamar-section,
 .kamar-section .carousel-item {
 	/* TODO : SEARCH FOR BETTER SOLUTION */
-	height: min(400px, 40dvh); 
+	height: 400px;
 	background-position: center;
 	background-size: cover;
-}
-
-@media (min-width: 1280px) {
-	.kamar-section .carousel-item {
-		height: 60dvh;
-	}
 }
 
 .kamar-section .carousel-item.img-1 {
@@ -363,10 +355,82 @@ header nav .nav-link.active::before {
 }
 
 .kamar-section .carousel-content p {
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 .kamar-section .carousel-content h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 400;
+}
+
+
+@media (min-width: 1280px) {
+	.kamar-section .carousel-item {
+		height: 60dvh;
+	}
+
+	.kamar-section .carousel-content p {
+		font-size: 1rem;
+	}
+
+	.kamar-section .carousel-content h1 {
+		font-size: 3rem;
+		font-weight: 400;
+	}
+}
+
+
+/* KAMAR SECTION */
+
+.activity-section .carousel-item {
+	/* TODO : SEARCH FOR BETTER SOLUTION */
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.activity-section .carousel-item.img-1 {
+	background-image: url(../img/day_meraki/13.png);
+}
+
+.activity-section .carousel-item.img-2 {
+	background-image: url(../img/day_meraki/14.png);
+}
+
+.activity-section .carousel-content p {
+	font-size: 0.8rem;
+}
+
+.activity-section .carousel-content h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+@media (min-width: 1280px) {
+	.activity-section .carousel-item {
+		height: 60dvh;
+	}
+
+	.activity-section .carousel-content p {
+		font-size: 1rem;
+	}
+
+	.activity-section .carousel-content h1 {
+		font-size: 4rem;
+	}
+}
+
+.sub-footer.insta>* {
+	font-weight: 400;
+}
+
+.logo {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 0.8rem;
+}
+
+.footer-content>* {
+	margin-block: -0.2rem;
 }
