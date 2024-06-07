@@ -44,7 +44,8 @@
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-Thin.eot");
 	src: local("Recoleta Thin"), local("Recoleta-Thin"),
-		url("../fonts/recoleta/Recoleta-Thin.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/recoleta/Recoleta-Thin.eot?#iefix")
+			format("embedded-opentype"),
 		url("../fonts/recoleta/Recoleta-Thin.woff2") format("woff2"),
 		url("../fonts/recoleta/Recoleta-Thin.woff") format("woff"),
 		url("../fonts/recoleta/Recoleta-Thin.ttf") format("truetype");
@@ -56,7 +57,8 @@
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-SemiBold.eot");
 	src: local("Recoleta SemiBold"), local("Recoleta-SemiBold"),
-		url("../fonts/recoleta/Recoleta-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/recoleta/Recoleta-SemiBold.eot?#iefix")
+			format("embedded-opentype"),
 		url("../fonts/recoleta/Recoleta-SemiBold.woff2") format("woff2"),
 		url("../fonts/recoleta/Recoleta-SemiBold.woff") format("woff"),
 		url("../fonts/recoleta/Recoleta-SemiBold.ttf") format("truetype");
@@ -68,7 +70,8 @@
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-Regular.eot");
 	src: local("Recoleta Regular"), local("Recoleta-Regular"),
-		url("../fonts/recoleta/Recoleta-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/recoleta/Recoleta-Regular.eot?#iefix")
+			format("embedded-opentype"),
 		url("../fonts/recoleta/Recoleta-Regular.woff2") format("woff2"),
 		url("../fonts/recoleta/Recoleta-Regular.woff") format("woff"),
 		url("../fonts/recoleta/Recoleta-Regular.ttf") format("truetype");
@@ -80,7 +83,8 @@
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-Bold.eot");
 	src: local("Recoleta Bold"), local("Recoleta-Bold"),
-		url("../fonts/recoleta/Recoleta-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/recoleta/Recoleta-Bold.eot?#iefix")
+			format("embedded-opentype"),
 		url("../fonts/recoleta/Recoleta-Bold.woff2") format("woff2"),
 		url("../fonts/recoleta/Recoleta-Bold.woff") format("woff"),
 		url("../fonts/recoleta/Recoleta-Bold.ttf") format("truetype");
@@ -92,7 +96,8 @@
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-Black.eot");
 	src: local("Recoleta Black"), local("Recoleta-Black"),
-		url("../fonts/recoleta/Recoleta-Black.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/recoleta/Recoleta-Black.eot?#iefix")
+			format("embedded-opentype"),
 		url("../fonts/recoleta/Recoleta-Black.woff2") format("woff2"),
 		url("../fonts/recoleta/Recoleta-Black.woff") format("woff"),
 		url("../fonts/recoleta/Recoleta-Black.ttf") format("truetype");
@@ -104,7 +109,8 @@
 	font-family: "Recoleta";
 	src: url("../fonts/recoleta/Recoleta-Light.eot");
 	src: local("Recoleta Light"), local("Recoleta-Light"),
-		url("../fonts/recoleta/Recoleta-Light.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/recoleta/Recoleta-Light.eot?#iefix")
+			format("embedded-opentype"),
 		url("../fonts/recoleta/Recoleta-Light.woff2") format("woff2"),
 		url("../fonts/recoleta/Recoleta-Light.woff") format("woff"),
 		url("../fonts/recoleta/Recoleta-Light.ttf") format("truetype");
@@ -147,10 +153,12 @@
 	--kamar-shadow: rgba(3, 18, 26, 0.2) 0px 1px 2px 0px;
 	--btn-box-shadow: var(--color-light) 0px 5px 15px;
 
-	--bg-color-img: linear-gradient(160deg,
-			#1a2f78 0%,
-			#1870c9 50%,
-			#5195e3 100%);
+	--bg-color-img: linear-gradient(
+		160deg,
+		#1a2f78 0%,
+		#1870c9 50%,
+		#5195e3 100%
+	);
 }
 
 * {
@@ -335,7 +343,8 @@ header nav .nav-link.active::before {
 	/* TODO : SEARCH FOR BETTER SOLUTION */
 	height: 400px;
 	background-position: center;
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .kamar-section .carousel-item.img-1 {
@@ -363,7 +372,6 @@ header nav .nav-link.active::before {
 	font-weight: 400;
 }
 
-
 @media (min-width: 1280px) {
 	.kamar-section .carousel-item {
 		height: 60dvh;
@@ -378,7 +386,6 @@ header nav .nav-link.active::before {
 		font-weight: 400;
 	}
 }
-
 
 /* KAMAR SECTION */
 
@@ -421,7 +428,7 @@ header nav .nav-link.active::before {
 	}
 }
 
-.sub-footer.insta>* {
+.sub-footer.insta > * {
 	font-weight: 400;
 }
 
@@ -431,6 +438,6 @@ header nav .nav-link.active::before {
 	margin-bottom: 0.8rem;
 }
 
-.footer-content>* {
+.footer-content > * {
 	margin-block: -0.2rem;
 }
