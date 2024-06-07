@@ -134,7 +134,7 @@
 
 	--color-info: #7d8da1;
 	--color-text: #1b0909;
-	--color-text-muted: #575757;
+	--color-text-muted: #c3c0c4;
 	--color-light: #848bc82e;
 	--color-danger: #ff0060;
 
@@ -387,7 +387,7 @@ header nav .nav-link.active::before {
 	}
 }
 
-/* KAMAR SECTION */
+/* ACTIVITY SECTION */
 
 .activity-section .carousel-item {
 	/* TODO : SEARCH FOR BETTER SOLUTION */

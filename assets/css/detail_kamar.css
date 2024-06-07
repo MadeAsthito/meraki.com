@@ -1,0 +1,65 @@
+.info-kamar-section {
+	height: 100%;
+}
+
+.info-kamar-section .carousel-item {
+	/* TODO : SEARCH FOR BETTER SOLUTION */
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.info-kamar-section .carousel-item.img-1 {
+	background-image: url(../img/klurut/cover\ klurut.png);
+}
+
+.info-kamar-section .carousel-item.img-2 {
+	background-image: url(../img/klurut/2.png);
+}
+
+.info-kamar-section .carousel-item.img-3 {
+	background-image: url(../img/klurut/3.png);
+}
+
+.info-kamar-section .carousel-item.img-4 {
+	background-image: url(../img/klurut/4.png);
+}
+
+.info-kamar-section .carousel-item.img-5 {
+	background-image: url(../img/klurut/5.png);
+}
+
+.info-kamar-section .carousel-content p {
+	font-size: 0.8rem;
+}
+
+.info-kamar-section .carousel-content h1 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+@media (min-width: 1280px) {
+	.info-kamar-section .carousel-item {
+		height: 60dvh;
+	}
+
+	.info-kamar-section .carousel-content p {
+		font-size: 1rem;
+	}
+
+	.info-kamar-section .carousel-content h1 {
+		font-size: 3rem;
+		font-weight: 400;
+	}
+}
+
+.header-items {
+	color: var(--color-text-muted);
+    transition: color 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.header-items.active {
+	color: var(--color-text);
+}
