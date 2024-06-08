@@ -52,16 +52,16 @@
 						<span class="material-icons-sharp text-white"> menu </span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav align-items-start">
-							<a class="nav-link" aria-current="page" href="#">Home</a>
-							<a class="nav-link" href="#">Kamar</a>
-							<a class="nav-link" href="#">Activity</a>
+						<div class="navbar-nav align-items-start w-100 justify-content-end">
+							<a class="nav-link" aria-current="page" href="#main">Home</a>
+							<a class="nav-link" href="#kamar">Kamar</a>
+							<a class="nav-link" href="#activity">Activity</a>
 						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
-		<main>
+		<main id="main">
 			<!-- ------------- -->
 			<!-- CAROUSEL HERO -->
 			<!-- ------------- -->
@@ -138,9 +138,9 @@
 			<!-- -------------------- -->
 
 			<div
-				class="info-section d-flex flex-column justify-content-center align-items-center mt-5 mb-4 px-3 gap-2"
+				class="info-section d-flex flex-column justify-content-center align-items-center mt-5 mb-4 my-md-5 px-3 gap-2"
 			>
-				<h1 class="">Meraki</h1>
+				<h1 class="text-center">Meraki</h1>
 				<hr />
 				<p class="">
 					<b
@@ -166,7 +166,7 @@
 			<!-- -------------------- -->
 			<!-- KAMAR SECTION         -->
 			<!-- -------------------- -->
-			<div class="kamar-section">
+			<div class="kamar-section" id="kamar">
 				<div id="kamarCarousel" class="carousel slide">
 					<div class="carousel-inner">
 						<div class="carousel-item active img-1">
@@ -260,9 +260,9 @@
 			<!-- ACTIVITY SECTION         -->
 			<!-- -------------------- -->
 
-			<div class="activity-section">
+			<div class="activity-section" id="activity">
 				<div
-					class="activity-caption mt-5 mb-4 px-5 d-flex flex-column justify-content-center align-items-center"
+					class="activity-caption mt-5 mb-4 my-md-5 pt-md-4 px-5 d-flex flex-column justify-content-center align-items-center"
 				>
 					<h1>A day at Meraki</h1>
 					<h3>Experience</h3>
@@ -334,11 +334,13 @@
 						<h1 class="text-center">@meraki.pemuteran</h1>
 					</div>
 				</div>
-				<div class="footer-back bg-pg-primary d-flex flex-column p-3 gap-2">
+				<div
+					class="footer-back bg-pg-primary d-flex flex-column align-items-md-center p-3 gap-2"
+				>
 					<div class="logo">
 						<img src="./assets/img/logo-meraki.png" alt="" />
 					</div>
-					<div class="footer-content text-white">
+					<div class="footer-content text-white text-md-center">
 						<p>Jalan Singaraja-Gilimanuk,</p>
 						<p>Desa Pemuteran, Tegallengah,</p>
 						<p>Gerokgak, Buleleng,</p>

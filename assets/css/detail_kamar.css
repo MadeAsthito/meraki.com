@@ -1,3 +1,9 @@
+@media (min-width: 991px) {
+	header nav .nav-link::before {
+		width: 85%;
+	}
+}
+
 .info-kamar-section {
 	height: 100%;
 }
@@ -40,6 +46,11 @@
 }
 
 @media (min-width: 1280px) {
+	.info-kamar-header {
+		display: flex;
+		justify-content: center;
+	}
+
 	.info-kamar-section .carousel-item {
 		height: 60dvh;
 	}
@@ -52,14 +63,48 @@
 		font-size: 3rem;
 		font-weight: 400;
 	}
+
+	.info-fasilitas {
+		height: 200px;
+	}
 }
 
 .header-items {
 	color: var(--color-text-muted);
-    transition: color 0.15s ease-in-out;
-    cursor: pointer;
+	transition: color 0.15s ease-in-out;
+	cursor: pointer;
 }
 
 .header-items.active {
 	color: var(--color-text);
+}
+
+.btn.btn-pg-primary {
+	background-color: var(--color-white);
+	border-radius: 1rem;
+}
+
+.btn.btn-pg-primary:hover {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+}
+
+.btn.btn-pg-whatsapp {
+	background-color: #25d366;
+	height: 100%;
+	border-radius: 100%;
+}
+
+.btn.btn-pg-whatsapp:hover {
+	background-color: var(--color-white);
+}
+
+.btn.btn-pg-whatsapp:hover i {
+	color: #25d366 !important;
+}
+
+@media (min-width: 1280px) {
+	.booking {
+		padding-inline: 400px !important;
+	}
 }

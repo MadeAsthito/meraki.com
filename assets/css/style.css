@@ -227,10 +227,12 @@ h1 {
 
 .btn.bg-cta {
 	border-color: var(--color-cta);
+	color: var(--color-white);
 }
 
 .btn.bg-cta:hover {
 	background-color: var(--color-cta-hover);
+	color: var(--color-white);
 }
 
 /* BOOTSTRAP */
@@ -265,6 +267,18 @@ header nav .nav-link::before {
 	opacity: 0;
 }
 
+@media (min-width: 991px) {
+	header nav .nav-link::before {
+		width: 78%;
+	}
+}
+
+@media (min-width: 1280px) {
+	header nav .container-fluid {
+		width: 1280px !important;
+	}
+}
+
 header nav .nav-link:hover {
 	color: var(--color-white) !important;
 }
@@ -293,7 +307,9 @@ header nav .nav-link.active::before {
 
 @media (min-width: 1280px) {
 	.hero-section .carousel-item {
-		height: 60dvh;
+		height: 80dvh;
+		background-size: cover;
+		background-position: center;
 	}
 }
 
@@ -338,10 +354,16 @@ header nav .nav-link.active::before {
 	border: 1px solid var(--color-primary);
 }
 
+@media (min-width: 1280px) {
+	.info-section p {
+		width: 650px !important;
+	}
+}
+
 /* KAMAR SECTION */
 .kamar-section .carousel-item {
 	/* TODO : SEARCH FOR BETTER SOLUTION */
-	height: 400px;
+	height: 280px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -372,9 +394,35 @@ header nav .nav-link.active::before {
 	font-weight: 400;
 }
 
+@media (min-width: 321px) {
+	.kamar-section .carousel-item {
+		/* TODO : SEARCH FOR BETTER SOLUTION */
+		height: 300px;
+	}
+}
+
+@media (min-width: 375px) {
+	.kamar-section .carousel-item {
+		/* TODO : SEARCH FOR BETTER SOLUTION */
+		height: 300px;
+	}
+}
+
+@media (min-width: 725px) {
+	.kamar-section .carousel-item {
+		/* TODO : SEARCH FOR BETTER SOLUTION */
+		height: 600px;
+	}
+}
+
 @media (min-width: 1280px) {
 	.kamar-section .carousel-item {
 		height: 60dvh;
+	}
+
+	.kamar-section .carousel-content {
+		width: 100% !important;
+		align-items: center !important;
 	}
 
 	.kamar-section .carousel-content p {
@@ -391,7 +439,7 @@ header nav .nav-link.active::before {
 
 .activity-section .carousel-item {
 	/* TODO : SEARCH FOR BETTER SOLUTION */
-	height: 400px;
+	height: 280px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -414,9 +462,37 @@ header nav .nav-link.active::before {
 	font-weight: 400;
 }
 
+@media (min-width: 321px) {
+	.activity-section .carousel-item {
+		/* TODO : SEARCH FOR BETTER SOLUTION */
+		height: 300px;
+	}
+}
+
+@media (min-width: 375px) {
+	.activity-section .carousel-item {
+		/* TODO : SEARCH FOR BETTER SOLUTION */
+		height: 300px;
+	}
+}
+
+@media (min-width: 725px) {
+	.activity-section .carousel-item {
+		/* TODO : SEARCH FOR BETTER SOLUTION */
+		height: 600px;
+	}
+}
+
 @media (min-width: 1280px) {
 	.activity-section .carousel-item {
 		height: 60dvh;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.activity-section .carousel-content {
+		width: 100% !important;
+		align-items: center !important;
 	}
 
 	.activity-section .carousel-content p {
