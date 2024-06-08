@@ -167,7 +167,32 @@
 			<!-- KAMAR SECTION         -->
 			<!-- -------------------- -->
 			<div class="kamar-section" id="kamar">
-				<div id="kamarCarousel" class="carousel slide">
+				<div class="form-booking d-flex flex-column flex-md-row mb-3 gap-3">
+					<div class="w-100">
+						<div class="form-floating">
+							<input
+								type="date"
+								class="form-control"
+								id="checkin"
+								placeholder="00:00"
+							/>
+							<label for="checkin">Check In</label>
+						</div>
+					</div>
+					<div class="w-100">
+						<div class="form-floating">
+							<input
+								type="date"
+								class="form-control"
+								id="checkout"
+								placeholder="00:00"
+							/>
+							<label for="checkout">Check Out</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-dark">Check Availablity</button>
+				</div>
+				<div id="kamarCarousel" class="carousel slide w-100">
 					<div class="carousel-inner">
 						<div class="carousel-item active img-1">
 							<a href="./detail_kamar.html">

@@ -394,6 +394,17 @@ header nav .nav-link.active::before {
 	font-weight: 400;
 }
 
+.kamar-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.kamar-section .form-booking {
+	width: 310px;
+}
+
 @media (min-width: 321px) {
 	.kamar-section .carousel-item {
 		/* TODO : SEARCH FOR BETTER SOLUTION */
@@ -409,6 +420,10 @@ header nav .nav-link.active::before {
 }
 
 @media (min-width: 725px) {
+	.kamar-section .form-booking {
+		width: 650px;
+	}
+
 	.kamar-section .carousel-item {
 		/* TODO : SEARCH FOR BETTER SOLUTION */
 		height: 600px;
